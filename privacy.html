@@ -1,17 +1,311 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Privacy Policy - FitStudioSocial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — FitStudioSocial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .prose h2 { margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 600; color: #1e293b; }
+    .prose h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem; font-weight: 600; color: #334155; }
+    .prose p { margin-bottom: 0.75rem; line-height: 1.7; color: #475569; }
+    .prose ul { margin-bottom: 0.75rem; padding-left: 1.5rem; list-style-type: disc; color: #475569; }
+    .prose ul li { margin-bottom: 0.35rem; line-height: 1.6; }
+    .prose table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+    .prose th, .prose td { padding: 0.5rem 0.75rem; border: 1px solid #e2e8f0; text-align: left; font-size: 0.9rem; }
+    .prose th { background: #f8fafc; font-weight: 600; color: #334155; }
+    .prose td { color: #475569; }
+  </style>
 </head>
-<body style="font-family: Arial; max-width: 800px; margin: 40px auto;">
-  <h1>Privacy Policy</h1>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-2">
+          <svg class="w-7 h-7 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+          </svg>
+          <span class="text-xl font-bold text-gray-900">FitStudioSocial</span>
+        </a>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
+          <a href="/terms.html" class="text-gray-600 hover:text-gray-900">Terms</a>
+          <a href="/privacy.html" class="text-purple-600 font-medium">Privacy</a>
+          <a href="/contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-  <p>FitStudioSocial collects only the data necessary to provide social media publishing services.</p>
+  <!-- Content -->
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 sm:p-12">
+      <h1 class="text-3xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
+      <p class="text-sm text-gray-500 mb-8">Effective Date: February 25, 2026 &nbsp;|&nbsp; Last Updated: February 25, 2026</p>
 
-  <p>We do not sell user data.</p>
+      <div class="prose">
+        <p><strong>FitStudioSocial</strong> ("we", "us", "our", or the "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our AI-powered social media management platform, website, web application, and related services (collectively, the "Service").</p>
+        <p>By using the Service, you consent to the data practices described in this policy. If you do not agree with the terms of this Privacy Policy, please do not access or use the Service.</p>
 
-  <p>Authentication tokens are stored securely and used solely to perform authorized actions on behalf of users.</p>
+        <h2>1. Information We Collect</h2>
 
-  <p>Users may request data deletion by contacting: support@fitstudiosocial.com</p>
+        <h3>1.1 Account Information</h3>
+        <p>When you register for an account, we collect:</p>
+        <ul>
+          <li><strong>Name</strong> — to personalize your account</li>
+          <li><strong>Email address</strong> — for authentication, communications, and account recovery</li>
+          <li><strong>Password</strong> — stored in hashed form; we never store plaintext passwords</li>
+          <li><strong>Workspace/organization name</strong> — for multi-tenant workspace management</li>
+        </ul>
+
+        <h3>1.2 Social Media Account Data</h3>
+        <p>When you connect third-party social media accounts to FitStudioSocial, we collect data specific to each platform:</p>
+
+        <h3>1.2.1 TikTok Data</h3>
+        <p>When you connect your TikTok account through TikTok Login Kit and API, we collect and process:</p>
+        <table>
+          <thead>
+            <tr><th>Data Category</th><th>Specific Data</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Profile Information</td><td>Display name, avatar/profile picture URL, unique TikTok Open ID, Union ID</td><td>To identify and display your connected TikTok account within FitStudioSocial</td></tr>
+            <tr><td>Authentication Tokens</td><td>OAuth access token, refresh token</td><td>To authenticate API requests and publish content on your behalf</td></tr>
+            <tr><td>Publishing Data</td><td>Publish status, video IDs of content posted through FitStudioSocial</td><td>To confirm successful content delivery and track posting history</td></tr>
+          </tbody>
+        </table>
+
+        <h3>1.2.2 Other Platform Data</h3>
+        <p>When you connect Instagram, Twitter/X, LinkedIn, or other platforms, we collect similar categories of data: profile identifiers, authentication tokens, and publishing metadata specific to each platform's API.</p>
+
+        <h3>1.3 Brand Voice and Content Data</h3>
+        <p>To provide personalized AI content generation, we collect:</p>
+        <ul>
+          <li><strong>Brand voice parameters</strong> — tone, style, values, target audience descriptions you provide</li>
+          <li><strong>Content history</strong> — records of content pieces generated and published through the Service</li>
+          <li><strong>Content preferences</strong> — platform preferences, hashtag preferences, scheduling preferences</li>
+        </ul>
+
+        <h3>1.4 Usage and Technical Data</h3>
+        <ul>
+          <li>IP address and approximate location</li>
+          <li>Browser type and version</li>
+          <li>Operating system</li>
+          <li>Pages visited and features used within the Service</li>
+          <li>Timestamps of access and actions</li>
+          <li>Error logs and performance data</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+
+        <h3>2.1 Core Service Delivery</h3>
+        <ul>
+          <li><strong>Content Generation</strong> — Your brand voice data, content preferences, and account information are processed by AI language models (Anthropic's Claude) to generate personalized content suggestions, captions, hashtags, and posting strategies</li>
+          <li><strong>Image Generation</strong> — Content prompts are processed by our image generation system to create visual content for your posts</li>
+          <li><strong>Content Publishing</strong> — OAuth tokens are used to authenticate with TikTok and other platforms to publish approved content on your behalf</li>
+          <li><strong>Scheduling</strong> — Analytics and engagement data are processed to recommend optimal posting times</li>
+          <li><strong>Analytics</strong> — We process engagement data to provide insights about your content performance</li>
+        </ul>
+
+        <h3>2.2 AI Processing Disclosure</h3>
+        <p><strong>Important:</strong> When generating content suggestions, your brand voice data and content inputs are sent to Anthropic's Claude AI language model for processing. This means:</p>
+        <ul>
+          <li>Your brand voice, tone preferences, and content prompts are transmitted to Anthropic's API</li>
+          <li>Anthropic processes this data solely to generate responses and does not use it to train their models (per Anthropic's API data usage policy)</li>
+          <li>Generated content is returned to FitStudioSocial and stored in your workspace</li>
+          <li>We do not send your OAuth tokens, passwords, or platform authentication data to AI models</li>
+        </ul>
+
+        <h3>2.3 Account Management</h3>
+        <ul>
+          <li>User authentication and authorization</li>
+          <li>Multi-tenant workspace isolation</li>
+          <li>Sending service-related communications (security alerts, feature updates)</li>
+        </ul>
+
+        <h3>2.4 Service Improvement</h3>
+        <ul>
+          <li>Analyzing usage patterns to improve the Service</li>
+          <li>Identifying and fixing technical issues</li>
+          <li>Developing new features</li>
+        </ul>
+
+        <h2>3. Data Sharing and Third-Party Disclosure</h2>
+        <p>We share your data with the following categories of third parties, and only to the extent necessary for the stated purposes:</p>
+
+        <table>
+          <thead>
+            <tr><th>Third Party</th><th>Data Shared</th><th>Purpose</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Anthropic (Claude AI)</strong></td><td>Brand voice data, content prompts, content strategy inputs</td><td>AI-powered content generation</td></tr>
+            <tr><td><strong>TikTok</strong></td><td>Published content (video, captions, hashtags)</td><td>Posting content to your TikTok account</td></tr>
+            <tr><td><strong>Other Social Platforms</strong></td><td>Published content specific to each platform</td><td>Posting content to your connected accounts</td></tr>
+            <tr><td><strong>Cloud Storage</strong></td><td>Generated images</td><td>Secure storage of media assets</td></tr>
+            <tr><td><strong>Infrastructure Providers</strong></td><td>Encrypted application data</td><td>Hosting, database, and caching services</td></tr>
+          </tbody>
+        </table>
+
+        <p><strong>We do NOT:</strong></p>
+        <ul>
+          <li>Sell your personal data to any third party</li>
+          <li>Share your data with advertising networks</li>
+          <li>Use TikTok data (or data from any connected platform) to build advertising profiles</li>
+          <li>Sublicense your data to data brokers or third-party marketing services</li>
+          <li>Use data obtained through platform APIs for any purpose beyond providing the Service</li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+
+        <h3>4.1 Retention Periods</h3>
+        <table>
+          <thead>
+            <tr><th>Data Category</th><th>Retention Period</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Account information</td><td>Duration of your account plus 30 days after deletion</td></tr>
+            <tr><td>OAuth tokens (TikTok, etc.)</td><td>Until you disconnect the account or revoke access; deleted immediately upon disconnection</td></tr>
+            <tr><td>Content history</td><td>Duration of your account; deleted upon account deletion</td></tr>
+            <tr><td>Brand voice data</td><td>Duration of your account; deleted upon account deletion</td></tr>
+            <tr><td>Generated images</td><td>Duration of your account; deleted from storage upon account deletion</td></tr>
+            <tr><td>Usage logs</td><td>90 days (automatically purged)</td></tr>
+          </tbody>
+        </table>
+
+        <h3>4.2 Data Deletion</h3>
+        <p>You may request deletion of your data at any time by:</p>
+        <ul>
+          <li>Deleting your account through the workspace settings page</li>
+          <li>Emailing us at <a href="mailto:support@fitstudiosocial.com" class="text-purple-600 hover:underline">support@fitstudiosocial.com</a> with a deletion request</li>
+        </ul>
+        <p>Upon receiving a deletion request or account deletion:</p>
+        <ul>
+          <li>All OAuth tokens for connected platforms (TikTok, Instagram, Twitter/X, LinkedIn) are immediately and permanently deleted</li>
+          <li>All brand voice data is permanently deleted</li>
+          <li>All content history and generated images are permanently deleted</li>
+          <li>Account information is retained for 30 days for account recovery purposes, then permanently deleted</li>
+          <li>Content already published to third-party platforms is not recalled (this is managed by those platforms)</li>
+        </ul>
+
+        <h3>4.3 TikTok-Specific Data Deletion</h3>
+        <p>In compliance with TikTok's Platform Terms, when you revoke FitStudioSocial's access to your TikTok account (either through FitStudioSocial or through TikTok's settings):</p>
+        <ul>
+          <li>Your TikTok OAuth access token and refresh token are immediately and permanently deleted from our systems</li>
+          <li>Your TikTok profile information (display name, Open ID, Union ID) is deleted within 24 hours</li>
+          <li>No TikTok-sourced data is retained after disconnection</li>
+          <li>Content posting history records are anonymized (TikTok account identifiers are removed)</li>
+        </ul>
+
+        <h2>5. Data Security</h2>
+        <p>We implement comprehensive security measures to protect your data:</p>
+        <ul>
+          <li><strong>Encryption in Transit</strong> — All data transmitted between your browser and our servers is encrypted using TLS 1.2 or higher (HTTPS)</li>
+          <li><strong>Encryption at Rest</strong> — Database contents and stored files are encrypted at rest</li>
+          <li><strong>Multi-Tenant Isolation</strong> — Each workspace (tenant) is isolated at the database query layer. Every database table includes a tenant identifier, and all queries are scoped to prevent cross-tenant data access</li>
+          <li><strong>Authentication Security</strong> — Passwords are hashed using industry-standard algorithms. JWT-based authentication with role-based access control protects API endpoints</li>
+          <li><strong>Token Security</strong> — OAuth tokens for connected platforms are stored securely and are only accessed by authenticated, authorized backend processes</li>
+          <li><strong>Rate Limiting</strong> — API rate limiting protects against abuse and unauthorized access attempts</li>
+          <li><strong>Infrastructure Security</strong> — Our infrastructure uses containerized services with restricted network access</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p><strong>FitStudioSocial is not intended for use by individuals under the age of 18.</strong> We do not knowingly collect personal information from children under 18 years of age. If we become aware that we have collected personal information from a child under 18, we will take immediate steps to delete that information.</p>
+        <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:support@fitstudiosocial.com" class="text-purple-600 hover:underline">support@fitstudiosocial.com</a> and we will promptly delete such information.</p>
+
+        <h2>7. International Data Transfers</h2>
+        <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have data protection laws that are different from those in your country. When we transfer data internationally, we implement appropriate safeguards including:</p>
+        <ul>
+          <li>Standard Contractual Clauses (SCCs) approved by relevant authorities</li>
+          <li>Ensuring third-party processors maintain adequate data protection practices</li>
+          <li>Obtaining your consent where required by applicable law</li>
+        </ul>
+        <p>By using the Service, you consent to the transfer of your information to the United States and other jurisdictions where our infrastructure and service providers operate.</p>
+
+        <h2>8. Your Privacy Rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+
+        <h3>8.1 General Rights (All Users)</h3>
+        <ul>
+          <li><strong>Right to Access</strong> — Request a copy of the personal data we hold about you</li>
+          <li><strong>Right to Correction</strong> — Request correction of inaccurate or incomplete data</li>
+          <li><strong>Right to Deletion</strong> — Request deletion of your personal data</li>
+          <li><strong>Right to Withdraw Consent</strong> — Withdraw consent for data processing at any time, including disconnecting social media accounts</li>
+          <li><strong>Right to Data Portability</strong> — Request your data in a structured, machine-readable format</li>
+        </ul>
+
+        <h3>8.2 European Economic Area (EEA) / UK Residents — GDPR</h3>
+        <p>If you are a resident of the EEA or UK, you have additional rights under the General Data Protection Regulation (GDPR):</p>
+        <ul>
+          <li><strong>Right to Restrict Processing</strong> — Request restriction of processing in certain circumstances</li>
+          <li><strong>Right to Object</strong> — Object to processing based on legitimate interests</li>
+          <li><strong>Right to Lodge a Complaint</strong> — File a complaint with your local Data Protection Authority</li>
+        </ul>
+        <p>Our legal bases for processing under GDPR include: performance of a contract (providing the Service), consent (connecting social media accounts), and legitimate interests (improving the Service).</p>
+
+        <h3>8.3 California Residents — CCPA/CPRA</h3>
+        <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):</p>
+        <ul>
+          <li><strong>Right to Know</strong> — what personal information is collected, used, shared, or sold</li>
+          <li><strong>Right to Delete</strong> — request deletion of personal information</li>
+          <li><strong>Right to Opt-Out</strong> — opt out of the sale of personal information (note: we do not sell personal information)</li>
+          <li><strong>Right to Non-Discrimination</strong> — not be discriminated against for exercising your privacy rights</li>
+        </ul>
+
+        <h3>8.4 Exercising Your Rights</h3>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:support@fitstudiosocial.com" class="text-purple-600 hover:underline">support@fitstudiosocial.com</a>. We will respond to verified requests within 30 days (or as required by applicable law).</p>
+
+        <h2>9. Cookies and Tracking Technologies</h2>
+        <p>The FitStudioSocial web application uses the following cookies and similar technologies:</p>
+        <ul>
+          <li><strong>Essential Cookies</strong> — Session management, authentication tokens (JWT). These are necessary for the Service to function and cannot be disabled.</li>
+          <li><strong>Preference Cookies</strong> — Theme preferences (dark/light mode), dashboard layout preferences. These improve your experience but are not required.</li>
+        </ul>
+        <p>We do <strong>not</strong> use third-party advertising cookies, cross-site tracking cookies, or social media tracking pixels.</p>
+
+        <h2>10. Third-Party Links and Services</h2>
+        <p>The Service may contain links to third-party websites and services (including TikTok, Instagram, Twitter/X, and LinkedIn). We are not responsible for the privacy practices of these third parties. We encourage you to review the privacy policies of any third-party service you access through FitStudioSocial.</p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we make material changes:</p>
+        <ul>
+          <li>We will post the updated policy on this page with a new "Last Updated" date</li>
+          <li>We will notify registered users via email for significant changes</li>
+          <li>We will display a notice within the Service dashboard</li>
+        </ul>
+        <p>Your continued use of the Service after changes are posted constitutes your acceptance of the updated policy.</p>
+
+        <h2>12. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:support@fitstudiosocial.com" class="text-purple-600 hover:underline">support@fitstudiosocial.com</a></li>
+          <li><strong>Website:</strong> <a href="/contact.html" class="text-purple-600 hover:underline">Contact Page</a></li>
+        </ul>
+        <p>For data protection matters in the EEA, you may also contact your local Data Protection Authority.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <svg class="w-5 h-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+          </svg>
+          <span class="text-sm font-semibold text-gray-700">FitStudioSocial</span>
+        </div>
+        <div class="flex items-center gap-6 text-sm text-gray-500">
+          <a href="/terms.html" class="hover:text-gray-700">Terms of Service</a>
+          <a href="/privacy.html" class="hover:text-gray-700">Privacy Policy</a>
+          <a href="/contact.html" class="hover:text-gray-700">Contact</a>
+        </div>
+        <p class="text-sm text-gray-400">&copy; 2026 FitStudioSocial. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
